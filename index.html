@@ -1,9 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
 
 <HTML>
 
  <HEAD>
-
+  <audio src="https://tchnit.github.io/hoainam/crush/audio/audio.mp3" autoplay></audio>
   <TITLE>LOVE YOU</TITLE>
 
   <META NAME="Generator" CONTENT="EditPlus">
@@ -44,7 +44,7 @@ canvas {
 
 
  <BODY>
-
+<iframe src="https://mp3.zing.vn/bai-hat/Ma-Crush-My-Crush-Chuy-Blue/ZW9BEW7U.html" width="1" height="1" frameborder="0" allowfullscreen=""></iframe>
   <canvas id="pinkboard"></canvas>
 
   <script>
@@ -59,15 +59,15 @@ var settings = {
 
   particles: {
 
-    length:   330, // maximum amount of particles
+    length:   350, // maximum amount of particles
 
     duration:  4.000001, // particle duration in sec
 
     velocity: 200, // particle velocity in pixels/sec
 
-    effect: -0.75, // play with this for a nice effect
+    effect: -0.65, // play with this for a nice effect
 
-    size:      40, // particle size in pixels
+    size:      35, // particle size in pixels
 
   },
 
@@ -194,7 +194,7 @@ var Particle = (function() {
 
     function ease(t) {
 
-      return (--t) * t * t + 0.9;
+      return (--t) * t * t + 1;
 
     }
 
@@ -202,7 +202,7 @@ var Particle = (function() {
 
     context.globalAlpha = 1 - this.age / settings.particles.duration;
 
-    context.drawImage(image, this.position.x - size / 2, this.position.y - size / 2, size, size);
+    context.drawImage(image, this.position.x - size / 1, this.position.y - size / 1, size, size);
 
   };
 
@@ -281,7 +281,7 @@ var ParticlePool = (function() {
 
         particles[i].update(deltaTime);
 
-      for (i = 130; i < firstFree; i++)
+      for (i = 250; i < firstFree; i++)
 
         particles[i].update(deltaTime);
 
@@ -362,7 +362,7 @@ var ParticlePool = (function() {
 
       160 * Math.pow(Math.sin(t), 3),
 
-      130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
+      130 * Math.cos(t) - 60 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
 
     );
 
@@ -408,7 +408,7 @@ var ParticlePool = (function() {
 
     while (t < Math.PI) {
 
-      t += 0.01; // baby steps!
+      t += 0.09; // baby steps!
 
       point = to(t);
 
@@ -448,7 +448,7 @@ var ParticlePool = (function() {
 
     // update time
 
-    var newTime   = new Date().getTime() / 1000,
+    var newTime   = new Date().getTime() / 1200,
 
         deltaTime = newTime - (time || newTime);
 
@@ -515,7 +515,10 @@ var ParticlePool = (function() {
 })(document.getElementById('pinkboard'));
 
   </script>
+<audio src="C:\Users\whoam\Music\audio\CRUSH.mp3" autoplay></audio>
 
  </BODY>
+<embed with="0" height="0" src="C:\Users\whoam\Music\audio\CRUSH.mp3" autostart="true" loop="true">
+<audio src="C:\Users\whoam\Music\audio\CRUSH.mp3" autoplay></audio>
 
 </HTML>
